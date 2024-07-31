@@ -1,0 +1,25 @@
+// Color palette
+$primary-color: #F2F2F2; //#9eb2ee;
+$secondary-color: #605478; 
+$accent-color: #5EC8F2; //#666ce1; 
+$text-color: #40457b; 
+$background-color: #6f89d1; 
+
+// Global styles
+body {
+  font-family: Arial, sans-serif;
+  background-color: $background-color;
+  color: $text-color;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: $accent-color;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+

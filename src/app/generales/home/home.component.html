@@ -1,0 +1,15 @@
+<p>Module home works!</p>
+
+
+<div *ngIf="this.lbolUserLogu; then thenBlock else elseBlock"></div>
+<ng-template #thenBlock>
+  <div>
+        <label>etiqueta #1</label>
+  </div>     
+  <router-outlet />
+</ng-template>
+<ng-template #elseBlock>
+    <div>
+        <label>etiqueta #2</label>
+    </div>
+</ng-template>

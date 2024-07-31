@@ -1,0 +1,71 @@
+<div class="accounts-container">
+  <h1>Account List</h1>
+  <div style="display: flex; flex-direction: row; align-items: center; justify-content: center;">
+    <table *ngIf="lAccounts">
+      <thead>
+        <tr>
+          <th>Account Number</th>
+          <th>Account Name</th>
+          <th>User Code</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let row of lAccounts">
+          <td>{{ row.id }}</td>
+          <td>{{ row.NumeCuen }}</td>
+          <td>{{ row.NombCuen }}</td>
+          <td>{{ row.CodiUser }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
+</div>
+
+<br />
+<div class="input-container">
+  <label for="user-input" class="input-label">Usuario</label>
+  <div>
+      <input
+      id="user-input"
+      type="text"
+      class="styled-input"
+      size="30" 
+      maxlength="30"
+      [(ngModel)]="userAccount"
+    />
+  </div>
+  
+</div>
+
+<div class="button-container">
+  <button class="styled-button" (click)="fnGetAccounts2()">Submit</button>
+</div>
+
+<div>
+  <br/>
+</div>
+
+<div class="accounts-container">
+  <h1>User List</h1>
+  <div style="display: flex; flex-direction: row; align-items: center; justify-content: center;">
+    <table *ngIf="lAccounts2">
+      <thead>
+        <tr>
+          <th>Account Number</th>
+          <th>Account Name</th>
+          <th>User Code</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let row of lAccounts2">
+          <td>{{ row.id }}</td>
+          <td>{{ row.NumeCuen }}</td>
+          <td>{{ row.NombCuen }}</td>
+          <td>{{ row.CodiUser }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
+</div>
